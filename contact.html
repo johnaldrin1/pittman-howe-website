@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact — Pittman-Howe Consulting LLC</title>
+  <meta name="description" content="Get in touch with Pittman-Howe Consulting. We respond to every inquiry personally within one business day.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- ===================== HEADER / NAV ===================== -->
+  <header class="site-header">
+    <nav class="nav-container" role="navigation" aria-label="Main navigation">
+      <a href="index.html" class="nav-logo" aria-label="Pittman-Howe Consulting — home">
+        <span class="nav-logo__wordmark">Pittman-Howe</span>
+        <span class="nav-logo__sub">Consulting</span>
+      </a>
+
+      <button class="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="main-nav">
+        <svg class="icon-hamburger" width="24" height="18" viewBox="0 0 24 18" fill="none" aria-hidden="true">
+          <line x1="0" y1="1"  x2="24" y2="1"  stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+          <line x1="0" y1="9"  x2="24" y2="9"  stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+          <line x1="0" y1="17" x2="24" y2="17" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+        <svg class="icon-close" width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true" hidden>
+          <line x1="4" y1="4"  x2="20" y2="20" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+          <line x1="20" y1="4" x2="4"  y2="20" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+      </button>
+
+      <ul class="nav-links" id="main-nav">
+        <li><a href="services.html">Services</a></li>
+        <li><a href="about.html">About</a></li>
+        <li class="nav-cta"><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ===================== PAGE HERO ===================== -->
+    <section class="page-hero page-hero--short" aria-labelledby="page-heading">
+      <div class="container">
+        <span class="eyebrow">Contact</span>
+        <h1 id="page-heading" class="display-heading">Let's Talk.</h1>
+        <p class="lead">We respond to every inquiry personally. Expect to hear from us within one business day.</p>
+      </div>
+    </section>
+
+    <!-- ===================== CONTACT BODY ===================== -->
+    <section class="contact-body" aria-labelledby="contact-heading">
+      <div class="container">
+        <div class="contact-body__grid">
+
+          <!-- Contact Info -->
+          <div class="contact-info">
+            <h2 class="section-heading" id="contact-heading">Reach Us</h2>
+
+            <div class="contact-info-item">
+              <span class="contact-info-item__label">Email</span>
+              <p class="contact-info-item__value">
+                <a href="mailto:hello@pittmanhoweconsulting.com">hello@pittmanhoweconsulting.com</a>
+              </p>
+            </div>
+
+            <div class="contact-info-item">
+              <span class="contact-info-item__label">Location</span>
+              <p class="contact-info-item__value">Central Florida, FL</p>
+            </div>
+
+            <div class="contact-info-item">
+              <span class="contact-info-item__label">Availability</span>
+              <p class="contact-info-item__value" style="font-size: var(--text-base); font-weight: var(--weight-regular);">Accepting new engagements. Typical response within 24 business hours.</p>
+            </div>
+
+            <hr class="contact-info__divider">
+
+            <div class="contact-info__what-to-expect">
+              <h3>What to expect</h3>
+              <ul class="expect-list" aria-label="What to expect when you reach out">
+                <li class="expect-item">A brief call to understand your situation</li>
+                <li class="expect-item">Honest assessment of whether we can help</li>
+                <li class="expect-item">A clear proposal if the fit is right</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Contact Form -->
+          <div class="contact-form-wrapper">
+            <form class="contact-form" name="contact" method="POST" novalidate aria-label="Contact form">
+              <!-- Note: wire this up via Cloudflare Pages Functions or a third-party service like Formspree -->
+
+              <div class="form-group">
+                <label class="form-label" for="name">
+                  Name <span aria-hidden="true">*</span>
+                </label>
+                <input
+                  class="form-input"
+                  type="text"
+                  id="name"
+                  name="name"
+                  autocomplete="name"
+                  placeholder="Your full name"
+                  required
+                >
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="email">
+                  Email <span aria-hidden="true">*</span>
+                </label>
+                <input
+                  class="form-input"
+                  type="email"
+                  id="email"
+                  name="email"
+                  autocomplete="email"
+                  placeholder="your@email.com"
+                  required
+                >
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="company">
+                  Company
+                  <span class="optional">(optional)</span>
+                </label>
+                <input
+                  class="form-input"
+                  type="text"
+                  id="company"
+                  name="company"
+                  autocomplete="organization"
+                  placeholder="Your company name"
+                >
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="message">
+                  How can we help? <span aria-hidden="true">*</span>
+                </label>
+                <textarea
+                  class="form-textarea"
+                  id="message"
+                  name="message"
+                  rows="6"
+                  placeholder="Describe what you're working on or working through — there's no wrong answer here."
+                  required
+                ></textarea>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="referral">
+                  How did you hear about us?
+                  <span class="optional">(optional)</span>
+                </label>
+                <select class="form-select" id="referral" name="referral">
+                  <option value="" disabled selected>Select one&hellip;</option>
+                  <option value="referral">Referral</option>
+                  <option value="search">Search Engine</option>
+                  <option value="linkedin">LinkedIn</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+
+              <button type="submit" class="form-submit">Send Message</button>
+
+              <p class="form-fine-print">We will never share your contact information. This site does not use analytics or tracking.</p>
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== FAQ ===================== -->
+    <section class="contact-faq" aria-labelledby="faq-heading">
+      <div class="container">
+        <div class="contact-faq__header">
+          <span class="eyebrow">FAQ</span>
+          <h2 class="section-heading section-heading--center" id="faq-heading">Common Questions</h2>
+        </div>
+
+        <div class="faq-list">
+
+          <div class="faq-item">
+            <p class="faq-item__question">How large are your typical engagements?</p>
+            <p class="faq-item__answer">Most of our project work runs 4–12 weeks, though we have advisory relationships that span years. We scope every engagement individually based on the actual work to be done.</p>
+          </div>
+
+          <div class="faq-item">
+            <p class="faq-item__question">Do you work with businesses outside Florida?</p>
+            <p class="faq-item__answer">Yes. While we're based in Central Florida and our network is strongest here, we work with clients nationally. Much of our work can be conducted remotely, with on-site visits where they add value.</p>
+          </div>
+
+          <div class="faq-item">
+            <p class="faq-item__question">What industries do you specialize in?</p>
+            <p class="faq-item__answer">Our deepest experience is in construction and professional services, but strong operational and strategic fundamentals apply broadly. We'll tell you honestly if we're not the right fit for your situation.</p>
+          </div>
+
+          <div class="faq-item">
+            <p class="faq-item__question">How do engagements typically start?</p>
+            <p class="faq-item__answer">With a conversation. No structured intake process, no sales deck. Tell us what's going on and we'll tell you if and how we can help.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="site-footer" aria-label="Site footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="footer-brand__wordmark">Pittman-Howe Consulting LLC</div>
+          <p class="footer-brand__tagline">Helping small businesses save time, cut waste, and compete.</p>
+          <p class="footer-brand__location">Serving clients from Central Florida and beyond.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Navigation</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <a href="mailto:pittmanhoweconsulting@gmail.com" class="footer-contact__email">pittmanhoweconsulting@gmail.com</a>
+          <p class="footer-contact__location">Central Florida, FL</p>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <p>&copy; 2026 Pittman-Howe Consulting LLC. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
