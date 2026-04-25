@@ -63,7 +63,7 @@
             <div class="contact-info-item">
               <span class="contact-info-item__label">Email</span>
               <p class="contact-info-item__value">
-                <a href="mailto:hello@pittmanhoweconsulting.com">hello@pittmanhoweconsulting.com</a>
+                <a href="mailto:pittmanhoweconsulting@gmail.com">pittmanhoweconsulting@gmail.com</a>
               </p>
             </div>
 
@@ -91,8 +91,12 @@
 
           <!-- Contact Form -->
           <div class="contact-form-wrapper">
-            <form class="contact-form" name="contact" method="POST" novalidate aria-label="Contact form">
-              <!-- Note: wire this up via Cloudflare Pages Functions or a third-party service like Formspree -->
+            <form class="contact-form" action="https://api.web3forms.com/submit" method="POST" novalidate aria-label="Contact form">
+              <!-- Web3Forms configuration -->
+              <input type="hidden" name="access_key" value="1aac4e50-84cf-4050-9245-a76848baecc0">
+              <input type="hidden" name="redirect" value="https://pittmanhoweconsulting.com/thank-you.html">
+              <input type="hidden" name="subject" value="New contact form submission from pittmanhoweconsulting.com">
+              <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
 
               <div class="form-group">
                 <label class="form-label" for="name">
@@ -240,7 +244,7 @@
     </div>
     <div class="footer-bottom">
       <div class="container">
-        <p>&copy; 2026 Pittman-Howe Consulting LLC. All rights reserved.</p>
+        <p>&copy; 2025 Pittman-Howe Consulting LLC. All rights reserved.</p>
       </div>
     </div>
   </footer>
