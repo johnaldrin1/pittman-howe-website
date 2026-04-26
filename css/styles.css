@@ -310,29 +310,21 @@ strong {
 
 .nav-logo {
   display: flex;
-  flex-direction: column;
-  gap: 1px;
+  align-items: center;
   text-decoration: none;
   flex-shrink: 0;
 }
 
-.nav-logo__wordmark {
-  font-family: var(--font-body);
-  font-weight: var(--weight-bold);
-  font-size: 1.1rem;
-  color: var(--color-brand-primary);
-  letter-spacing: -0.01em;
-  line-height: 1;
+.nav-logo__img {
+  width: 220px;
+  height: auto;
+  display: block;
 }
 
-.nav-logo__sub {
-  font-family: var(--font-body);
-  font-weight: var(--weight-regular);
-  font-size: var(--text-xs);
-  color: var(--color-text-muted);
-  letter-spacing: 0.05em;
-  text-transform: uppercase;
-  line-height: 1;
+@media (max-width: 640px) {
+  .nav-logo__img {
+    width: 160px;
+  }
 }
 
 .nav-toggle {
