@@ -342,6 +342,18 @@ strong {
   background-color: var(--color-bg-card);
 }
 
+.nav-toggle__close {
+  display: none;
+}
+
+.nav-toggle.is-open .nav-toggle__open {
+  display: none;
+}
+
+.nav-toggle.is-open .nav-toggle__close {
+  display: block;
+}
+
 .nav-links {
   display: flex;
   align-items: center;
